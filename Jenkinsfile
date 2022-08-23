@@ -16,7 +16,7 @@ pipeline {
     		steps{
     			script{
     			container('maven') {
-    	          sh 'mvn -v'	
+    	          sh 'mvn clean install'	
     			}
     		}
     	}	
