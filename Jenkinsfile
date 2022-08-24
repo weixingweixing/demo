@@ -17,7 +17,7 @@ pipeline {
                       script{
                       container('maven'){
                  sh 'mvn test'
-                 println "test 1"
+                 println "test 2"
                       }
                 }
             }
