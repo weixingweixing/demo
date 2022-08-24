@@ -12,6 +12,15 @@ pipeline {
 			}
 		}
 	}
+  stage('Test'){
+               steps{
+                      script{
+                      container('maven'){
+                 sh 'mvn test'
+                      }
+                }
+            }
+     }
     stage('maven') {
     		steps{
     			script{
